@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlan District High School Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for icons (optional, but nice for social media) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="site-name-main">CHARLANARCHIVE.ORG</span>
+                <span class="site-name-sub">The Online Archive of Charlan District High School</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="#signin">SIGN IN</a>
+                <a href="#mylist">MY FAVORITES <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </header>
 
+    <main>
+        <div class="container search-section">
+            <div class="logo-container">
+                <div class="logo">CDHS</div>
+                <!-- Or you could use an image: <img src="path/to/your/school_logo.png" alt="CDHS Logo" class="logo-img"> -->
+            </div>
+
+            <h1>
+                Search Our Archives.<br>
+                Discover School History.<br>
+                Access Digital Memories.
+            </h1>
+
+            <form class="search-form">
+                <input type="search" placeholder="Search..." aria-label="Search archives">
+                <button type="submit">SEARCH <i class="fas fa-search"></i></button>
+            </form>
+
+            <div class="search-filters">
+                <select aria-label="Filter by type">
+                    <option value="all">All Types</option>
+                    <option value="photos">Photographs</option>
+                    <option value="documents">Documents</option>
+                    <option value="yearbooks">Yearbooks</option>
+                    <option value="videos">Videos</option>
+                </select>
+                <label class="checkbox-label">
+                    <input type="checkbox" name="digital-matches">
+                    Show only results with digital matches
+                </label>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h2>CHARLAN DISTRICT HIGH SCHOOL ARCHIVE</h2>
+                <p>
+                    123 School Drive<br>
+                    Charlan Town, ST 54321
+                </p>
+                <p>
+                    Phone: (555) 123-4567<br>
+                    Fax: (555) 123-4568<br>
+                    E-mail: <a href="mailto:archive@charlanhs.edu">archive@charlanhs.edu</a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Archive Hours:</h3>
+                <p>
+                    Monday-Friday<br>
+                    9:00 a.m. to 4:00 p.m.<br>
+                    (By appointment)
+                </p>
+                <p><a href="#access-info">How to access and request materials</a></p>
+                <p><a href="#school-calendar">See school holiday schedule</a></p>
+            </div>
+            <div class="footer-column footer-links-social">
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <a href="#accessibility">Accessibility Statement</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#school-policies">School Policies</a>
+                <p class="copyright">Copyright © Charlan District High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="sub-footer">
+        <div class="container">
+            <nav>
+                <a href="#contribute">Contribute to the Archive</a>
+                <a href="#about">About Us</a>
+                <a href="#data-policy">Data Use Policy</a>
+                <a href="#contact">Contact Archive Staff</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
