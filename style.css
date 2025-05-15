@@ -8,7 +8,7 @@
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f0f0f0; /* Light gray background like the example */
+    background-color: #f0f0f0; 
     line-height: 1.6;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-    color: #0056b3; /* A standard link blue */
+    color: #0056b3; 
     text-decoration: none;
 }
 
@@ -33,7 +33,7 @@ h1, h2, h3 {
 
 /* Top Bar */
 .top-bar {
-    background-color: #002b5c; /* Dark blue, similar to example */
+    background-color: #002b5c; 
     color: #fff;
     padding: 10px 0;
     font-size: 0.9em;
@@ -69,11 +69,9 @@ h1, h2, h3 {
     margin-left: 3px;
 }
 
-
-/* Main Search Section */
 main {
     padding: 40px 0;
-    background-color: #f8f8f8; /* Slightly off-white, main content area */
+    background-color: #f8f8f8; 
     text-align: center;
 }
 
@@ -82,25 +80,15 @@ main {
 }
 
 .logo {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #d9534f; /* Orange color, similar to example */
-    color: white;
-    border-radius: 50%;
-    font-size: 3em;
-    font-weight: bold;
-    line-height: 150px; /* Vertically center text */
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: inline-block; 
 }
-/* If using an image for the logo:
-.logo-img {
-    width: 150px;
-    height: auto;
-    border-radius: 8px; // or 50% if you want a circular image frame
+
+.logo img {
+    display: block;
+    width: 350px;  
+    max-width: 100%; 
+    height: auto; 
 }
-*/
 
 .search-section h1 {
     font-size: 2em;
@@ -142,14 +130,14 @@ main {
     margin-left: 8px;
 }
 .search-form button[type="submit"]:hover {
-    background-color: #c9302c; /* Darker orange on hover */
+    background-color: #c9302c; 
 }
 
 .search-filters {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between select and checkbox */
+    gap: 20px; 
     font-size: 0.9em;
     color: #555;
 }
@@ -168,12 +156,12 @@ main {
 
 .search-filters input[type="checkbox"] {
     margin-right: 8px;
-    accent-color: #d9534f; /* Match button color for checkbox */
+    accent-color: #d9534f; 
 }
 
 /* Main Footer */
 .main-footer {
-    background-color: #e9ecef; /* Lighter gray for footer, like example */
+    background-color: #e9ecef; 
     padding: 40px 0;
     color: #333;
     font-size: 0.9em;
@@ -187,7 +175,7 @@ main {
 
 .footer-column h2 {
     font-size: 1.1em;
-    color: #002b5c; /* Dark blue for headings */
+    color: #002b5c;
     margin-bottom: 15px;
 }
 .footer-column h3 {
@@ -202,7 +190,7 @@ main {
 
 .footer-column a {
     color: #0056b3;
-    display: block; /* Make links take full width for easier clicking */
+    display: block; 
     margin-bottom: 5px;
 }
 .footer-column a:hover {
@@ -231,7 +219,7 @@ main {
 
 /* Sub Footer */
 .sub-footer {
-    background-color: #002b5c; /* Dark blue, matches top bar */
+    background-color: #002b5c;
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -271,7 +259,7 @@ main {
     .search-form button[type="submit"] {
         border-radius: 4px;
         margin-bottom: 10px;
-        border-right: 1px solid #ccc; /* Add back border for stacked view */
+        border-right: 1px solid #ccc; 
     }
     .search-form button[type="submit"] {
         margin-bottom: 0;
@@ -279,10 +267,10 @@ main {
 
     .search-filters {
         flex-direction: column;
-        align-items: flex-start; /* Align items to the start when stacked */
+        align-items: flex-start; 
         margin-left: auto;
         margin-right: auto;
-        max-width: 300px; /* Constrain width for better appearance */
+        max-width: 300px;
     }
     .search-filters select {
         width: 100%;
@@ -290,17 +278,17 @@ main {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr; /* Stack columns */
+        grid-template-columns: 1fr; 
         text-align: center;
     }
     .footer-column {
         margin-bottom: 20px;
     }
     .footer-links-social {
-        text-align: center; /* Center social icons and links in this column on mobile */
+        text-align: center; 
     }
     .footer-column a {
-        display: inline-block; /* Allow multiple links per line if they fit */
+        display: inline-block; 
         margin: 5px 5px;
     }
     .social-icons a {
@@ -318,7 +306,7 @@ main {
 
 @media (max-width: 480px) {
     .top-bar-left .site-name-sub {
-        display: block; /* Stack subtitle below main name */
+        display: block;
         margin-top: 3px;
     }
     .search-section h1 {
