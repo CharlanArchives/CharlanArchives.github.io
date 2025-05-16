@@ -34,8 +34,8 @@
                 Access Digital Memories.
             </h1>
 
-            <form class="search-form">
-                <input type="search" placeholder="Search..." aria-label="Search archives">
+            <form class="search-form" action="search-results.html" method="GET">
+                <input type="search" name="query" placeholder="Search..." aria-label="Search archives" required> {/* Added name="query" and required */}
                 <button type="submit">SEARCH <i class="fas fa-search"></i></button>
             </form>
 
