@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Charlan District High School Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="site-name-main">CHARLANARCHIVES.GITHUB.IO</span>
+                <span class="site-name-sub">The Online Archive of Charlan District High School</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="login.html">SIGN IN</a> <!-- Point SIGN IN to login.html -->
+                <a href="#mylist">MY FAVORITES <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="login-page-main">
+        <div class="login-content-area">
+
+            <div class="login-branding">
+                <img src="banner_logo-removebg-preview.png" alt="Charlan Archive Center Logo" class="login-form-logo">
+                <span class="login-form-title-text">Charlan Archives Portal</span>
+            </div>
+
+            <p class="login-instructions">
+                Enter your user information below.<br>
+                Then press the Logon button to continue.
+            </p>
+
+            <form class="actual-login-form" action="#login-handler" method="post"> {/* Update action as needed */}
+                <div class="form-field">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-field">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <button type="submit" class="btn-logon">Logon</button>
+            </form>
+
+            <div class="login-form-links">
+                <a href="#forgot-password">
+                    <i class="fas fa-question-circle"></i> Forgot Password?
+                </a>
+                <a href="#first-time-user">
+                    <i class="fas fa-user-plus"></i> First Time Users
+                </a>
+            </div>
+
+            <hr class="login-form-separator">
+
+            <div class="login-form-footer-info">
+                <p>Powered by YourArchiveSystem™</p> {/* Customize this line */}
+                <p>© 2024 Charlan District High School. All Rights Reserved.</p>
+                <a href="#sitemap">Site Map</a> {/* Customize this link */}
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h2>CHARLAN DISTRICT HIGH SCHOOL ARCHIVE</h2>
+                <p>
+                    19743 County Rd 17<br>
+                    Williamstown, ON K0C2J0
+                </p>
+                <p>
+                    Phone: 613-347-2441<br>
+                    E-mail: <a href="mailto:charlanarchive@gmail.com">charlanarchive@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Archive Information:</h3>
+                <p><a href="#access-info">How to access and request materials</a></p>
+                <p><a href="#school-calendar">See school holiday schedule</a></p>
+            </div>
+            <div class="footer-column footer-links-social">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/charlandhs/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/charlancrusaders/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#accessibility">Accessibility Statement</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#school-policies">School Policies</a>
+                <p class="copyright">Copyright © Charlan District High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="sub-footer">
+        <div class="container">
+            <nav>
+                <a href="#contribute">Contribute to the Archive</a>
+                <a href="#about">About Us</a>
+                <a href="#data-policy">Data Use Policy</a>
+                <a href="#contact">Contact Archive Staff</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
