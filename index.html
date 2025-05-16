@@ -34,12 +34,15 @@
                 Access Digital Memories.
             </h1>
 
-            <form class="search-form" action="search-results.html" method="GET">
-                <input type="search" name="query" placeholder="Search..." aria-label="Search archives" required>
-                <button type="submit">SEARCH <i class="fas fa-search"></i></button>
+            <form action="search-results.html" method="GET">
 
+                <div class="search-form">
+                    <input type="search" name="query" placeholder="Search..." aria-label="Search archives" required>
+                    <button type="submit">SEARCH <i class="fas fa-search"></i></button>
+                </div>
+                    
                 <div class="search-filters">
-                    <select aria-label="Filter by type">
+                    <select name="type-filter" aria-label="Filter by type">
                         <option value="all">All Types</option>
                         <option value="photos">Photographs</option>
                         <option value="documents">Documents</option>
