@@ -37,21 +37,23 @@
             <form class="search-form" action="search-results.html" method="GET">
                 <input type="search" name="query" placeholder="Search..." aria-label="Search archives" required>
                 <button type="submit">SEARCH <i class="fas fa-search"></i></button>
+
+                <div class="search-filters">
+                    <select aria-label="Filter by type">
+                        <option value="all">All Types</option>
+                        <option value="photos">Photographs</option>
+                        <option value="documents">Documents</option>
+                        <option value="yearbooks">Yearbooks</option>
+                        <option value="videos">Videos</option>
+                    </select>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="digital-matches">
+                        Show only results with digital matches
+                    </label>
+                </div>
             </form>
 
-            <div class="search-filters">
-                <select aria-label="Filter by type">
-                    <option value="all">All Types</option>
-                    <option value="photos">Photographs</option>
-                    <option value="documents">Documents</option>
-                    <option value="yearbooks">Yearbooks</option>
-                    <option value="videos">Videos</option>
-                </select>
-                <label class="checkbox-label">
-                    <input type="checkbox" name="digital-matches">
-                    Show only results with digital matches
-                </label>
-            </div>
+            
     </main>
 
 <footer class="main-footer">
