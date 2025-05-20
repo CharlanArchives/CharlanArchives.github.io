@@ -1,4 +1,5 @@
 /* Basic Reset & Global Styles */
+/* Owen's Spaghetti code below */
 * {
     margin: 0;
     padding: 0;
@@ -31,7 +32,6 @@ h1, h2, h3 {
     margin-bottom: 0.8em;
 }
 
-/* Top Bar */
 .top-bar {
     background-color: #002b5c; 
     color: #fff;
@@ -159,7 +159,6 @@ main {
     accent-color: #d9534f; 
 }
 
-/* Main Footer */
 .main-footer {
     background-color: #e9ecef; 
     padding: 40px 0;
@@ -218,7 +217,6 @@ main {
     color: #0056b3;
 }
 
-/* Sub Footer */
 .sub-footer {
     background-color: #002b5c;
     color: #fff;
@@ -236,7 +234,6 @@ main {
     opacity: 0.9;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .top-bar .container {
         flex-direction: column;
@@ -347,13 +344,12 @@ main {
     width: 70px; 
     height: auto;
     margin-right: 20px;
-    /* max-height: 70px; */
 }
 
 .login-form-title-text {
-    font-size: 1.8em; /* Large title text */
-    color: #002b5c; /* Charlan's dark blue */
-    font-weight: 600; /* Boldish */
+    font-size: 1.8em; 
+    color: #002b5c; 
+    font-weight: 600; 
     line-height: 1.2;
 }
 
@@ -465,10 +461,108 @@ main {
     }
 
     .login-form-logo {
-        margin-bottom: 15px; /* Space between logo and title when stacked */
-        /* width: 60px; reduce size further if needed */
+        margin-bottom: 15px; 
     }
     .login-form-title-text {
         font-size: 1.6em;
+    }
+}
+
+/* CALANDAR */
+
+.calendar-page-main {
+    padding: 40px 20px;
+    background-color: 
+    min-height: calc(100vh - 230px); 
+    display: flex; 
+    align-items: flex-start;
+    justify-content: center; 
+}
+
+.calendar-content-area {
+    background-color: #fff;
+    padding: 30px 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    max-width: 900px; 
+    width: 100%; 
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    text-align: left; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+.calendar-content-area h1 {
+    font-size: 2em;
+    color: #002b5c; 
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.calendar-intro {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.calendar-image-container {
+    margin-bottom: 30px;
+    text-align: center; 
+}
+
+.calendar-image-container img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd; 
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.official-calendar-link {
+    text-align: center;
+    font-size: 1.1em;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #eee; 
+}
+
+.official-calendar-link a {
+    color: #0056b3;
+    font-weight: bold;
+}
+
+.official-calendar-link a:hover {
+    text-decoration: underline;
+    color: #003f7f;
+}
+
+@media (max-width: 960px) { 
+    .calendar-content-area {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .calendar-content-area h1 {
+        font-size: 1.6em;
+    }
+    .calendar-intro, .official-calendar-link {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 540px) {
+    .calendar-content-area h1 {
+        font-size: 1.4em;
+    }
+     .calendar-page-main {
+        padding: 20px 10px;
+    }
+    .calendar-content-area {
+        padding: 20px 15px;
     }
 }
