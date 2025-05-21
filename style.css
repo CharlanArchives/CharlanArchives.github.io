@@ -33,7 +33,7 @@ h1, h2, h3 {
 }
 
 .top-bar {
-    background-color: #1A70D8; 
+    background-color: #3c5097; 
     color: #fff;
     padding: 10px 0;
     font-size: 0.9em;
@@ -175,12 +175,12 @@ main {
 
 .footer-column h2 {
     font-size: 1.1em;
-    color: #1A70D8;
+    color: #3c5097;
     margin-bottom: 15px;
 }
 .footer-column h3 {
     font-size: 1em;
-    color: #1A70D8;
+    color: #3c5097;
     margin-bottom: 10px;
 }
 
@@ -218,7 +218,7 @@ main {
 }
 
 .sub-footer {
-    background-color: #1A70D8;
+    background-color: #3c5097;
     color: #fff;
     padding: 15px 0;
     text-align: center;
@@ -348,7 +348,7 @@ main {
 
 .login-form-title-text {
     font-size: 1.8em; 
-    color: #1A70D8; 
+    color: #3c5097; 
     font-weight: 600; 
     line-height: 1.2;
 }
@@ -494,7 +494,7 @@ main {
 
 .calendar-content-area h1 {
     font-size: 2em;
-    color: #1A70D8; 
+    color: #3c5097; 
     margin-bottom: 20px;
     text-align: center;
     font-weight: 600;
