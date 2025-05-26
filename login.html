@@ -33,8 +33,13 @@
                 Enter your user information below.<br>
                 Then press the Login button to continue.
             </p>
+            <p class="login-instructions">
+                Enter your user information below.<br>
+                Then press the Login button to continue.
+            </p>
+            <div id="login-error-message" style="color: red; margin-bottom: 15px; text-align: center;"></div> 
 
-            <form class="actual-login-form" action="#login-handler" method="post">
+            <form class="actual-login-form" id="login-form" method="post">
                 <div class="form-field">
                     <label for="username">Username</label>
                     <input type="text" id="username" name="username" required>
