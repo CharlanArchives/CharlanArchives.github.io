@@ -1,5 +1,13 @@
 /* temporary login till backend is sorted out, just so i can fandagle and fiddle with the website */
 
+function login(username, password) {
+    if (username === "admin" && password === "password") {
+        return true;
+    }
+    
+    return false;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const authLink = document.getElementById('auth-link');
     const adminLink = document.getElementById('admin-link');
@@ -51,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             if (loginErrorMessage) loginErrorMessage.textContent = '';
 
             // username 'admin', password 'password'
-            if (username === 'admin' && password === 'password') {
+            if (login(username, password)) {
                 localStorage.setItem('isUserLoggedIn', 'true');
                 alert('Login successful! Redirecting...');
                 window.location.href = 'index.html'; 
