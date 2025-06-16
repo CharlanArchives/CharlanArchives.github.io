@@ -566,11 +566,12 @@ main {
         padding: 20px 15px;
     }
 }
+/* SEARCH */
 
 .search-results-main {
     background-color: #f9f9f9;
     padding: 30px 20px;
-    min-height: calc(100vh - 230px);
+    min-height: calc(100vh - 230px); 
 }
 
 .search-header {
@@ -580,6 +581,7 @@ main {
     border-radius: 5px;
     margin-bottom: 30px;
 }
+
 
 .search-header .search-form {
     max-width: none; 
@@ -601,6 +603,10 @@ main {
     color: #333;
 }
 
+.summary-text strong {
+    color: #000;
+}
+
 .sort-options label {
     margin-right: 8px;
     font-size: 0.9em;
@@ -612,6 +618,7 @@ main {
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: white;
+    font-size: 0.9em;
 }
 
 .results-list {
@@ -629,6 +636,11 @@ main {
     display: flex;
     gap: 20px;
     align-items: flex-start;
+    transition: box-shadow 0.2s;
+}
+
+.result-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 .result-thumbnail {
@@ -642,6 +654,7 @@ main {
     border: 1px solid #ddd;
     border-radius: 3px;
     display: block;
+    background-color: #f0f0f0;
 }
 
 .result-info {
@@ -672,6 +685,10 @@ main {
     padding-bottom: 10px;
 }
 
+.result-meta span {
+    margin-right: 10px;
+}
+
 .result-description {
     font-size: 1em;
     line-height: 1.6;
@@ -681,8 +698,9 @@ main {
 
 .result-actions {
     display: flex;
-    gap: 10px;
+    gap: 15px;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .btn-action {
@@ -695,6 +713,7 @@ main {
     font-weight: bold;
     text-decoration: none;
     transition: background-color 0.2s;
+    border: 1px solid transparent;
 }
 .btn-action:hover {
     background-color: #2c3a70;
@@ -706,6 +725,7 @@ main {
     color: #555;
     font-size: 0.9em;
     text-decoration: none;
+    font-weight: bold;
 }
 .btn-action-secondary:hover {
     color: #0056b3;
@@ -736,6 +756,7 @@ main {
     text-decoration: none;
     color: #0056b3;
     background-color: #fff;
+    transition: background-color 0.2s;
 }
 
 .pagination a:hover {
@@ -748,12 +769,14 @@ main {
     color: #fff;
     border-color: #3c5097;
     font-weight: bold;
+    cursor: default;
 }
 
 .pagination .page-disabled {
     color: #aaa;
     background-color: #f5f5f5;
     cursor: not-allowed;
+    border-color: #e0e0e0;
 }
 
 @media (max-width: 768px) {
@@ -762,10 +785,17 @@ main {
     }
     .result-thumbnail img {
         width: 100%;
-        height: 200px; /
+        height: 200px; 
     }
     .results-summary-bar {
         flex-direction: column;
         align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .pagination a, .pagination span {
+        padding: 6px 10px;
+        font-size: 0.9em;
     }
 }
