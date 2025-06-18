@@ -113,6 +113,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (query) {
         var yearbooks = searchAllYearbooks(query);
         var resultsGrid = document.getElementsByClassName("results-grid")[0];
+
+        console.log(yearbooks);
         
         resultsGrid.innerHTML = "";
 
@@ -120,10 +122,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var iHTML = "";
         for (var i in yearbooks) {
-            iHTML = iHTML + `<div class="result-card">
-            <a href="archive/yearbooks/"` + i + `.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="https://via.placeholder.com/200x260.png?text=Yearbook+"` + i + `" alt="Yearbook "` + i + ` Cover">
-                <h3>Yearbook` + i + `</h3>
+            iHTML += `<div class="result-card">
+            <a href="archive/yearbooks/${i}.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="https://via.placeholder.com/200x260.png?text=Yearbook+${i}" alt="Yearbook ${i} Cover">
+                <h3>Yearbook ${i}</h3>
                 </a>
             </div>`;
 
