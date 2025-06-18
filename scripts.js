@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', function() {
         updateAuthUI();
     }
     
-    const url = new URL(window.location.href);
-    const params = new URLSearchParams(url.search);
+    const params = new URLSearchParams(window.location.search);
+    var query = params.get("query");
 
-    if (params.get("query")) {
-        var yearbooks = searchAllYearbooks(params.get("query"));
+    if (query) {
+        var yearbooks = searchAllYearbooks(query);
         var resultsGrid = document.getElementsByClass("results-grid")[0];
         
         resultsGrid.innerHTML = "";
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         resultsGrid.innerHTML = iHTML;
 
-        document.getElementsByClass("summary-text")[0].innerHTML = "Showing <strong>" + yearbooks.length + "</strong> results for \"<strong>yearbooks</string>\".";
+        document.getElementsByClass("summary-text")[0].innerHTML = "Showing <strong>" + yearbooks.length + "</strong> results for \"<strong>" + query + "</string>\".";
 
         
     }
