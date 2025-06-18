@@ -106,5 +106,31 @@ document.addEventListener('DOMContentLoaded', function() {
     if (authLink || adminLink) {
         updateAuthUI();
     }
+    
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+
+    if (params.get("query")) {
+        var yearbooks = searchAllYearbooks(params.get("query"));
+        var resultsGrid = document.getElementsByClass("results-grid")[0];
+        
+        resultsGrid.innerHTML = "";
+
+        var iHTML = "";
+        for (var i in yearbooks) {
+            iHTML = iHTML + `<div class="result-card">
+            <a href="archive/yearbooks/"` + i + `.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="https://via.placeholder.com/200x260.png?text=Yearbook+"` + i + `" alt="Yearbook "` + i + ` Cover">
+                <h3>Yearbook` + i + `</h3>
+                </a>
+            </div>`;
+        }
+
+        resultsGrid.innerHTML = iHTML;
+
+        document.getElementsByClass("summary-text")[0].innerHTML = "Showing <strong>" + yearbooks.length + "</strong> results for \"<strong>yearbooks</string>\".";
+
+        
+    }
 
 });
