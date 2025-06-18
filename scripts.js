@@ -8,6 +8,34 @@ function login(username, password) {
     return false;
 }
 
+async function fetchTextFile(url) {
+    const response = await fetch(url);
+    const text = await response.text();
+    return text;
+}
+
+async function searchYearbook(query, year) {
+    // Example usage:
+    var text = await fetchTextFile('https://charlanarchives.github.io/archive/yearbooks/searchtext/' + year + '.pdf.txt');
+    return text.includes(query);
+}
+
+const yearbookYears = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
+
+function searchAllYearbooks(query) {
+    var results = [];
+
+    for (const year of yearbookYears) {
+        searchYearbook(query, year).then(val => {
+            if (val == true) {
+                results.push(year);
+            }
+        });
+    }
+
+    return results;
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     const authLink = document.getElementById('auth-link');
     const adminLink = document.getElementById('admin-link');
