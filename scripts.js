@@ -124,9 +124,9 @@ document.addEventListener('DOMContentLoaded', function() {
         var iHTML = "";
         for (var i in yearbooks) {
             iHTML += `<div class="result-card">
-            <a href="archive/yearbooks/${i}.pdf" target="_blank" rel="noopener noreferrer">
-                <img src="https://via.placeholder.com/200x260.png?text=Yearbook+${i}" alt="Yearbook ${i} Cover">
-                <h3>Yearbook ${i}</h3>
+            <a href="archive/yearbooks/${yearbooks[i]}.pdf" target="_blank" rel="noopener noreferrer">
+                <img src="https://via.placeholder.com/200x260.png?text=Yearbook+${yearbooks[i]}" alt="Yearbook ${yearbooks[i]} Cover">
+                <h3>Yearbook ${yearbooks[i]}</h3>
                 </a>
             </div>`;
 
