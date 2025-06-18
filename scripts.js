@@ -22,18 +22,20 @@ async function searchYearbook(query, year) {
 
 const yearbookYears = [1996, 1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024];
 
-async function searchAllYearbooks(query) {
-    var results = [];
+function searchAllYearbooks(query) {
+    const results = [];
+    const promises = [];
 
     for (const year of yearbookYears) {
-        searchYearbook(query, year).then(val => {
-            if (val == true) {
+        const p = searchYearbook(query, year).then(val => {
+            if (val === true) {
                 results.push(year);
             }
         });
+        promises.push(p);
     }
 
-    return results;
+    return Promise.all(promises).then(() => results);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -111,12 +113,9 @@ document.addEventListener('DOMContentLoaded', function() {
     var query = params.get("query");
 
     if (query) {
-        var yearbooks = await searchAllYearbooks(query);
         var resultsGrid = document.getElementsByClassName("results-grid")[0];
-
-        console.log(yearbooks);
-        
-        resultsGrid.innerHTML = "";
+        resultsGrid.innerHTML = "Loading...";
+        var yearbooks = searchAllYearbooks(query);
 
         document.getElementsByClassName("search-form")[0].getElementsByTagName("input")[0].value = query;
 
