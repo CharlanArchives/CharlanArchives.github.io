@@ -1,1 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Results - Charlan District High School Archive</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="top-bar">
+        <div class="container">
+            <div class="top-bar-left">
+                <span class="site-name-main">CHARLANARCHIVES.GITHUB.IO</span>
+                <span class="site-name-sub">The Online Archive of Charlan District High School</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="login.html" id="auth-link">SIGN IN</a>
+                <a href="#mylist">MY FAVORITES <i class="fas fa-chevron-right"></i></a>
+            </div>
+        </div>
+    </header>
 
+    <main class="search-results-main">
+        <div class="container">
+            <header class="search-header">
+                <form action="search-results.html" method="GET">
+                    <div class="search-form">
+                        <input type="search" name="query" placeholder="Search for yearbooks, photos..." value="yearbooks" aria-label="Search archives" required>
+                        <button type="submit">SEARCH <i class="fas fa-search"></i></button>
+                    </div>
+                    <div class="search-filters">
+                        <select name="type-filter" aria-label="Filter by type">
+                            <option value="all">All Types</option>
+                            <option value="photos">Photographs</option>
+                            <option value="documents">Documents</option>
+                            <option value="yearbooks" selected>Yearbooks</option>
+                            <option value="videos">Videos</option>
+                        </select>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="digital-matches" checked>
+                            Show only results with digital matches
+                        </label>
+                    </div>
+                </form>
+            </header>
+
+            <!-- Results Summary and Sorting -->
+            <div class="results-summary-bar">
+                <div class="summary-text">Showing <strong>29</strong> results for "<strong>yearbooks</strong>".</div>
+                <div class="sort-options">
+                    <label for="sort-by">Sort by:</label>
+                    <select id="sort-by" name="sort">
+                        <option value="relevance">Relevance</option>
+                        <option value="date-desc" selected>Date (Newest First)</option>
+                        <option value="date-asc">Date (Oldest First)</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="results-grid">
+                <div class="result-card">
+                    <a href="archive/yearbooks/2024.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2024" alt="Yearbook 2024 Cover">
+                        <h3>Yearbook 2024</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2023.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2023" alt="Yearbook 2023 Cover">
+                        <h3>Yearbook 2023</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2022.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2022" alt="Yearbook 2022 Cover">
+                        <h3>Yearbook 2022</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2021.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2021" alt="Yearbook 2021 Cover">
+                        <h3>Yearbook 2021</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2020.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2020" alt="Yearbook 2020 Cover">
+                        <h3>Yearbook 2020</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2019.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2019" alt="Yearbook 2019 Cover">
+                        <h3>Yearbook 2019</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2018.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2018" alt="Yearbook 2018 Cover">
+                        <h3>Yearbook 2018</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2017.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2017" alt="Yearbook 2017 Cover">
+                        <h3>Yearbook 2017</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2016.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2016" alt="Yearbook 2016 Cover">
+                        <h3>Yearbook 2016</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2015.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2015" alt="Yearbook 2015 Cover">
+                        <h3>Yearbook 2015</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2014.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2014" alt="Yearbook 2014 Cover">
+                        <h3>Yearbook 2014</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2013.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2013" alt="Yearbook 2013 Cover">
+                        <h3>Yearbook 2013</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2012.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2012" alt="Yearbook 2012 Cover">
+                        <h3>Yearbook 2012</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2011.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2011" alt="Yearbook 2011 Cover">
+                        <h3>Yearbook 2011</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2010.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2010" alt="Yearbook 2010 Cover">
+                        <h3>Yearbook 2010</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2009.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2009" alt="Yearbook 2009 Cover">
+                        <h3>Yearbook 2009</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2008.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2008" alt="Yearbook 2008 Cover">
+                        <h3>Yearbook 2008</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2007.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2007" alt="Yearbook 2007 Cover">
+                        <h3>Yearbook 2007</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2006.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src=".png?text=Yearbook+2006" alt="Yearbook 2006 Cover">
+                        <h3>Yearbook 2006</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2005.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2005" alt="Yearbook 2005 Cover">
+                        <h3>Yearbook 2005</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2004.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2004" alt="Yearbook 2004 Cover">
+                        <h3>Yearbook 2004</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2003.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2003" alt="Yearbook 2003 Cover">
+                        <h3>Yearbook 2003</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2002.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2002" alt="Yearbook 2002 Cover">
+                        <h3>Yearbook 2002</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2001.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2001" alt="Yearbook 2001 Cover">
+                        <h3>Yearbook 2001</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/2000.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+2000" alt="Yearbook 2000 Cover">
+                        <h3>Yearbook 2000</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/1999.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+1999" alt="Yearbook 1999 Cover">
+                        <h3>Yearbook 1999</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/1998.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+1998" alt="Yearbook 1998 Cover">
+                        <h3>Yearbook 1998</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/1997.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+1997" alt="Yearbook 1997 Cover">
+                        <h3>Yearbook 1997</h3>
+                    </a>
+                </div>
+                <div class="result-card">
+                    <a href="archive/yearbooks/1996.pdf" target="_blank" rel="noopener noreferrer">
+                        <img src="https://via.placeholder.com/200x260.png?text=Yearbook+1996" alt="Yearbook 1996 Cover">
+                        <h3>Yearbook 1996</h3>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav class="pagination" aria-label="Page navigation">
+                 <ul>
+                    <li><span class="page-disabled">«</span></li>
+                    <li><span class="current-page">1</span></li>
+                    <li><span class="page-disabled">»</span></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-column">
+                <h2>CHARLAN DISTRICT HIGH SCHOOL ARCHIVE</h2>
+                <p>
+                    19743 County Rd 17<br>
+                    Williamstown, ON K0C2J0
+                </p>
+                <p>
+                    Phone: 613-347-2441<br>
+                    E-mail: <a href="mailto:charlanarchive@gmail.com">charlanarchive@gmail.com</a>
+                </p>
+            </div>
+            <div class="footer-column">
+                <h3>Archive Information:</h3>
+                <p><a href="#access-info">How to access and request materials</a></p>
+                <p><a href="calendar.html">See school holiday schedule</a></p>
+            </div>
+            <div class="footer-column footer-links-social">
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/charlandhs/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/charlancrusaders/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <a href="#accessibility">Accessibility Statement</a>
+                <a href="#privacy">Privacy Policy</a>
+                <a href="#school-policies">School Policies</a>
+                <p class="copyright">Copyright © Charlan District High School. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="sub-footer">
+        <div class="container">
+            <nav>
+                <a href="#contribute">Contribute to the Archive</a>
+                <a href="#about">About Us</a>
+                <a href="#data-policy">Data Use Policy</a>
+                <a href="#contact">Contact Archive Staff</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
