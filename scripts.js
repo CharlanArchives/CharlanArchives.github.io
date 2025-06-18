@@ -113,12 +113,14 @@ document.addEventListener('DOMContentLoaded', function() {
     var query = params.get("query");
 
     if (query) {
+        console.log("making search req");
         var resultsGrid = document.getElementsByClassName("results-grid")[0];
         resultsGrid.innerHTML = "Loading...";
-        var yearbooks = searchAllYearbooks(query);
-
         document.getElementsByClassName("search-form")[0].getElementsByTagName("input")[0].value = query;
-
+        
+        searchAllYearbooks(query).then(yearbooks => {
+            console.log(yearbooks)
+        
         var iHTML = "";
         for (var i in yearbooks) {
             iHTML += `<div class="result-card">
@@ -134,7 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
         resultsGrid.innerHTML = iHTML;
 
         document.getElementsByClassName("summary-text")[0].innerHTML = "Showing <strong>" + yearbooks.length + "</strong> results for \"<strong>" + query + "</string>\".";
-
+        });
         
     }
 
