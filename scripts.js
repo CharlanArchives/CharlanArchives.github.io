@@ -116,6 +116,8 @@ document.addEventListener('DOMContentLoaded', function() {
         
         resultsGrid.innerHTML = "";
 
+        document.getElementsByClassName("search-form")[0].getElementsByTagName("input")[0].value = query;
+
         var iHTML = "";
         for (var i in yearbooks) {
             iHTML = iHTML + `<div class="result-card">
@@ -124,6 +126,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3>Yearbook` + i + `</h3>
                 </a>
             </div>`;
+
+            console.log(iHTML);
         }
 
         resultsGrid.innerHTML = iHTML;
